@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+</head>
+<body>
+    <form id="form">
+        <table align="center" border="0" 
+            cellpadding="10" cellspacing="0" width="30%">
+
+                <tr bgcolor="#f0b27a">
+                    <th colspan="2">Form Input</th>
+                </tr>
+
+                <tr bgcolor="beige">
+                <td width="30%">
+                    <label for="">Nama</label>
+                </td>
+                <td>
+                    <input type="text" name="nama" id="nama" placeholder="Masukan nama">
+                </td>
+
+
+                <tr bgcolor="beige">
+                <td width="30%">
+                    <label for="">Pekerjaan</label>
+                </td>
+                <td>
+                    <input type="text" name="pekerjaan" id="pekerjaan" placeholder="Masukan pekerjaan">
+                </td>
+
+
+                <tr bgcolor="beige">
+                <td width="30%">
+                    <label for="">Hobby</label>
+                </td>
+                <td>
+                    <input type="text" name="hobby" id="hobby" placeholder="Masukan hobby">
+                </td>
+
+
+                <tr bgcolor="#f0b27a">
+                    <th colspan="2">
+                        <button type="button" name="proses" value="kirim" onclick="dataPerson()" id="">Kirim</button>
+                        <button type="button" name="unproses" value="batal" onclick="dataCancel()" id="">Cancel</button>
+                    </th>
+                </tr>
+            </tr>
+        </table>
+    </form>
+    <table align="center" border="0" cellpadding="10" cellspacing="0" width="30%">
+    <center>
+        <span id="hasil" align="center" width="30%"></span>
+    </center>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
